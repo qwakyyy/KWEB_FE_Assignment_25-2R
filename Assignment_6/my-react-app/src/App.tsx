@@ -16,17 +16,30 @@ function App() {
     <div className={appStyle.container}>
       <h1>Todo List</h1>
       {
-        todoList.map((todo, index) => 
-          <div>
-            <span className={appStyle.todo}>{todo}</span>
-            <button onClick={() => setTodoList(todoList.filter((_, i) => i !== index))}>X</button>
-          </div>
-        )
-      }
+        todoList.map((todo, index) => (
+          <Item key={index} todo={todo} index={index} remove={
+            () => setTodoList(todoList.filter((_, i) => i !== index))
+          }></Item>
+      ))}
       <div className="input">
         <input type='text' ref={inputRef}></input>
         <button onClick={Add}>+</button>
       </div>
+    </div>
+  )
+}
+
+type ItemProps = {
+  todo: string,
+  index: number,
+  remove: () => void
+}
+
+function Item({ todo, index, remove } : ItemProps) {
+  return (
+    <div>
+      <span className={appStyle.todo}>{todo}</span>
+        <button onClick={remove}>X</button>
     </div>
   )
 }
