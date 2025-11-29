@@ -6,15 +6,22 @@
   width: 100vw;
 
   /* Background color */
-  background-color: #f0f4f8; /* pick any color you like */
+  background-color: #38a391; /* pick any color you like */
 
   /* Flexbox centering */
   display: flex;
   flex-direction: column;   /* stack items vertically */
   justify-content: center;  /* center vertically */
   align-items: center;      /* center horizontally */
-
   text-align: center;       /* center text inside */
+}
+
+.container input {
+  background-color: #4bb99a; /* light teal */
+  color: #fff;              /* text color */
+  border: 1px solid #ccc;   /* border color */
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .todo {
