@@ -35,7 +35,7 @@ type ItemProps = {
   remove: () => void
 }
 
-function Item({ todo, index, remove } : ItemProps) {
+function Item({ todo, remove } : ItemProps) {
   return (
     <div>
       <span className={appStyle.todo}>{todo}</span>
