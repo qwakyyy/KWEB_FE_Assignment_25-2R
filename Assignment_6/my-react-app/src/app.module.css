@@ -1,0 +1,23 @@
+/* app.module.css */
+
+.container {
+  /* Full screen size */
+  height: 100vh;
+  width: 100vw;
+
+  /* Background color */
+  background-color: #f0f4f8; /* pick any color you like */
+
+  /* Flexbox centering */
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  justify-content: center;  /* center vertically */
+  align-items: center;      /* center horizontally */
+
+  text-align: center;       /* center text inside */
+}
+
+.todo {
+  margin: 8px;
+  font-size: 18px;
+}
