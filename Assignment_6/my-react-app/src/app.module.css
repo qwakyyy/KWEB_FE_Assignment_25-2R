@@ -24,6 +24,10 @@
   border-radius: 4px;
 }
 
+.container button {
+    background-color: #4bb99a;
+}
+
 .todo {
   margin: 8px;
   font-size: 18px;
